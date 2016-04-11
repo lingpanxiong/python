@@ -1,3 +1,4 @@
+#sql connect and return data
 import MySQLdb
 
 conn=MySQLdb.connect(

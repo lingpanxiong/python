@@ -12,9 +12,9 @@ conn=MySQLdb.connect(
 cursor=conn.cursor() 
 
 sql="select * from user"
-cursor.execute(sql)
+cursor.execute(sql) #python执行的SQL语句
 
-rs=cursor.fetchall()
+rs=cursor.fetchall()#接受全部返回行
 for row in rs:
     print "userid=%s,username=%s"%row
 

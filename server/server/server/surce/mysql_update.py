@@ -1,3 +1,5 @@
+#sql inser update&delete
+#encoding:utf-8
 import MySQLdb
 
 conn=MySQLdb.connect(

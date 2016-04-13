@@ -23,5 +23,5 @@ urlpatterns = [
 	#url(r'^time/\d+/$',first),
 	url(r'^time/01/$',first),
 	url(r'^time/02/$',second),
-    url(r'^static/(?P<path>.*)$','django.views.static.serve',{'document_root':settings.STATIC_URL}),
+    url(r'^basweb/(?P<path>.*)$','django.views.static.serve',{'document_root':settings.STATIC_ROOT}),
 ]

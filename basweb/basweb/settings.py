@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'rp+((rt1m^1!vd90k0kr9do%-e54o%u*qp&k7l)j)*mkj)ch+5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False#True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'basweb.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['E:\develops\basweb\web'],#dir make 
+        'DIRS': ['E:\\develops\\basweb\\web'],#dir make "\\"!
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,11 +119,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 #STATIC_URL = '/static/'
-
+STATIC_ROOT = ''
 STATIC_URL = '/web/'
 
 STATICFILES_DIRS=(
 
-#os.path.join(os.path.dirname(__file__),'/web/').replace('\\','/'),
-os.path.join(os.path.dirname(__file__),STATIC_URL).replace('\\','/'),
+os.path.join(os.path.dirname(__file__),'../web/').replace('\\','/'),
+#os.path.join(os.path.dirname(__file__),STATIC_URL).replace('\\','/'),
 )

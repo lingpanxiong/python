@@ -124,6 +124,6 @@ STATIC_URL = '/web/'
 
 STATICFILES_DIRS=(
 
-#os.path.join(os.path.dirname(__file__),'E:\develops\list\web').replace('\\','/'),
+#os.path.join(os.path.dirname(__file__),'/web/').replace('\\','/'),
 os.path.join(os.path.dirname(__file__),STATIC_URL).replace('\\','/'),
 )

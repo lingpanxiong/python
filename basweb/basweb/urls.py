@@ -15,8 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from basweb.views import first
+from basweb.views import *
+import settings
+
 urlpatterns = [
     #(r'^admin/', admin.site.urls),
-	url(r'^time/\d+/$',first),
+	#url(r'^time/\d+/$',first),
+	url(r'^time/01/$',first),
+	url(r'^time/02/$',second),
+    url(r'^static/(?P<path>.*)$','django.views.static.serve',{'document_root':settings.STATIC_URL}),
 ]

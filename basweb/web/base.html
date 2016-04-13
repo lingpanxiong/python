@@ -1,11 +1,24 @@
 <html>
-<head><title>{%block title%}{%endblock%}</title></head>
+<head>
+<title>{%block title%}{%endblock%}</title>
+<link rel="stylesheet" href="E:/develops/basweb/web/bas.css" type="text/css">
+<!--
+<style type="text/css">
+body
+{
+
+	background-color: blue;
+}
+</style>
+-->
+<!-- <style type="text/css">@import url("bas.css")></style> -->
+</head>
 <body>
-<h1>my helpful timestam site</h1>
+<!-- <script src="bas.js" language="javascript"></script> -->
 {%block content%}{%endblock%}
 {%block footer%}
 <hr>
-<p>thanks for visiting my site.</p>
+<p class="pp">thanks for visiting my site.</p>
 {%endblock%}
-<body>
+</body>
 </html>

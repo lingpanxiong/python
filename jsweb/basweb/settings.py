@@ -55,7 +55,7 @@ ROOT_URLCONF = 'basweb.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['E:\develops\\basweb\web'],#dir make 转义字符用"\\"!
+        'DIRS': ['E:\develops\jsweb\web'],#dir make "\\"!
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

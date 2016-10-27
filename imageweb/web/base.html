@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>{%block title%}{%endblock%}</title>
+<!---->
+<link rel="stylesheet" href="/imageweb/static/bas.css" type="text/css">
+<link rel="stylesheet" {%block css%}{%endblock%} type="text/css">
+
+{%block jss%}{%endblock%}
+</head>
+<body>
+    <div class="body">
+<div>
+</div>
+{%block js%}{%endblock%}
+{%block content%}{%endblock%}
+</div>
+{%block footer%}
+<hr>
+<p class="footer"><a href="http://github.com/lingpanxiong">My Github</a></p><!--class meet css .pp -->
+<p class="footer"><a href="http://www.baidu.com">baidu</a></p><!--class meet css .pp -->
+{%endblock%}
+</body>
+</html>

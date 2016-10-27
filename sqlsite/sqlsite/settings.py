@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'sqlsite.books',# dir of apps 
+	'sqlsite.Books',# dir of apps 
 ]
 
 MIDDLEWARE_CLASSES = [

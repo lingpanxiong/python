@@ -23,9 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7@3^@wd9sqce84xrr-qaf+#-m5_8q^3u1te9k9k8ub-_sx+fdt'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
+#finally must be false no't true
+DEBUG = False
+#‘*’ alow all client
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/Users/iront/developer/pythonapp/mysite/templates',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

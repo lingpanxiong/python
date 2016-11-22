@@ -1,5 +1,10 @@
-<html>
-<body>
-It is now {{current_date}}.
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block string %}
+
+{{string.site}}<br>
+{{string.content}}
+
+
+{% endblock %}
+

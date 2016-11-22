@@ -15,8 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from mysite.views import current_datetime
 
+#import more than 2 defs,must use","
+#from mysite.views import current_datetime,add2
+#visit webpage:127.0.0.1:port/*
+from mysite import views as mviews
 urlpatterns = [
-    url(r'^time/$', current_datetime),
+    url(r'^time/$',mviews.current_datetime1,name='time'),
+    url(r'^add2/(\d+)/(\d+)/$',mviews.add2,name='add2'),
 ]

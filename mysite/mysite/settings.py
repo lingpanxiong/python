@@ -1,3 +1,6 @@
+#!/usr/bin/python
+#-*-coding:utf-8-*-
+##解决文档包含中文问题##
 """
 Django settings for mysite project.
 
@@ -37,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-]
+
+    'people',
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -54,7 +59,10 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/Users/iront/developer/pythonapp/mysite/templates',],
+        #使用绝对目录，切换系统（mac to windows ）使用有问题
+        #'DIRS': ['D:/python-master/mysite/templates',],
+        #使用相对目录os.path.join(BASE_DIR,'')
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

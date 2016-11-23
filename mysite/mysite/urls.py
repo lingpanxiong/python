@@ -20,7 +20,11 @@ from django.contrib import admin
 #from mysite.views import current_datetime,add2
 #visit webpage:127.0.0.1:port/*
 from mysite import views as mviews
+
 urlpatterns = [
-    url(r'^time/$',mviews.current_datetime1,name='time'),
+    url(r'^string/$',mviews.current_datetime1,name='string'),
     url(r'^add2/(\d+)/(\d+)/$',mviews.add2,name='add2'),
+    url(r'^time/$',mviews.current_datetime,name='time'),
+    url(r'^admin/', admin.site.urls),
+    url(r'^home/$', mviews.index,name='home'),
 ]

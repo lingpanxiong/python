@@ -1,10 +1,8 @@
 {% extends 'base.html' %}
 
 {% block string %}
-
 {{string.site}}<br>
 {{string.content}}
-
-
 {% endblock %}
 
+{% block p %} This is at {{current_date}}.{% endblock %}
